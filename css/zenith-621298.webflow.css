@@ -38,6 +38,7 @@ body {
   background-position: 0 0, 0 0;
   background-repeat: repeat-y, repeat;
   background-size: auto, auto;
+  background-attachment: fixed, scroll;
   position: relative;
   overflow: visible;
 }
@@ -421,6 +422,29 @@ body {
   align-items: center;
   margin: 30% 0% 10%;
   display: flex;
+}
+
+@media screen and (min-width: 1920px) {
+  .background {
+    width: 100%;
+    background-image: url('../images/Grain-texture.png'), linear-gradient(#5f809c, #a1886e 28%, #1d1106 51%, #35638a 68%, #e6c59b);
+    background-repeat: repeat-y, repeat;
+    background-size: 100%, auto;
+  }
+
+  .cloud-1.cloud-1-_-position {
+    height: auto;
+    top: 32%;
+  }
+
+  .cloud-2 {
+    height: auto;
+  }
+
+  .icons-wrap {
+    grid-column-gap: 29px;
+    grid-row-gap: 29px;
+  }
 }
 
 @media screen and (max-width: 991px) {
